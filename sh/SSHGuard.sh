@@ -6,7 +6,7 @@ echo ""
 # check root
 if [ `echo -n $USER` != "root" ]
 then
-echo " *** Fehler: Bitte als root starten"
+echo "*** Fehler: Bitte als root starten"
 echo ""
 exit 1
 fi
