@@ -9,3 +9,7 @@ _Update.sh_
 _SSHGuard.sh_
 
 > curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/sh/SSHGuard.sh | sh
+
+_pwtl_
+
+> curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/sh/pwtl.sh | sh
