@@ -1,3 +1,5 @@
+#WIP
+
 #!/bin/bash
 #
 # check root
