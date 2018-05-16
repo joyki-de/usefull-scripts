@@ -15,6 +15,10 @@
 
 *Usage on Shell:*
 
+_Conan Installer-Script_
+
+> curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/sh/CONAN-Installer.sh |sh
+
 _Update_
 
 > curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/sh/Update.sh | sh
