@@ -3,6 +3,8 @@
 
 ### Changelog:
 
+- Added CONAN-Installer.sh
+
 - Added LetsEncryptUpdater-nginx.sh / WIP
 - Added pwtl.sh
 - Added SSHGuard.sh
