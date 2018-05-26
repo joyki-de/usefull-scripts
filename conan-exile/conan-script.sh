@@ -1,3 +1,7 @@
+# Conan Scripter v1.0
+#
+# CC-BY Joyki
+#
 #! /bin/bash
 updater="conan-update.sh"
 starter="conan-start.sh"

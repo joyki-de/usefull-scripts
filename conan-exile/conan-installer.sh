@@ -1,4 +1,4 @@
-# Conan Installer v 1.0
+# Conan Installer v1.0
 #
 # CC-BY Joyki
 #
