@@ -3,8 +3,8 @@
 
 ### Changelog:
 
-- Added CONAN-Installer.sh
-
+- Added /conan-exile/conan-script.sh
+- Added /conan-exile/conan-installer.sh
 - Added LetsEncryptUpdater-nginx.sh / WIP
 - Added pwtl.sh
 - Added SSHGuard.sh
@@ -15,9 +15,8 @@
 
 *Usage on Shell:*
 
-_Conan Installer-Script_
 
-> curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/sh/CONAN-Installer.sh |sh
+> curl https://raw.githubusercontent.com/joyki-de/usefull-scripts/master/conan-exile/conan-installer.sh |sh
 
 _Update_
 
