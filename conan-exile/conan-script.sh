@@ -41,7 +41,7 @@ touch conan-check.sh
 echo '#! /bin/bash
 case "$(pidof Conan | wc -w)" in
 0)
-conan-start.sh
+~/conan-start.sh
 ;;
 1)
 ;;
