@@ -23,6 +23,8 @@ to check every 10 minutes if Server up and running
 
 (don't forget to change the "path_to")
 
+
+	
 ### Next:
 
 - Complete Script for Install & Create Scripts, added Check in crontab, ...
