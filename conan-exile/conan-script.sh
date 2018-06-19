@@ -15,7 +15,7 @@ touch conan-update.sh
 echo '#! /bin/bash
 echo "[Start Update Conan]"
 cd ~/Conan/
-./steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir Conan/Serverfiles +login anonymous +app_update 443030 validate +quit
+./steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir ~/Conan/Serverfiles +login anonymous +app_update 443030 validate +quit
 echo "[done]"' > $updater
 chmod +x conan-update.sh
 echo  "[Updater] created"
