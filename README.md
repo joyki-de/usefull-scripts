@@ -3,6 +3,7 @@
 
 ### Changelog:
 
+- Added /conan-exile/conan-backup.sh
 - Added /conan-exile/conan-script.sh
 - Added /conan-exile/conan-installer.sh
 - Added LetsEncryptUpdater-nginx.sh / WIP
