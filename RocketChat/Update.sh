@@ -12,6 +12,7 @@ sleep 1
 tar zxvf rocket.chat.tgz
 echo "[INFO] Install"
 sleep 1
+rm Rocket.Chat -r
 mv bundle Rocket.Chat
 cd Rocket.Chat/programs/server
 npm install
