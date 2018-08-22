@@ -1,7 +1,10 @@
 # usefull-scripts
 
+A Collection of usefull scripts for Linux & Windows
 
 ### Changelog:
+
+- Added /windows-gameserver-script/*
 
 - Added /conan-exile/conan-backup.sh
 - Added /conan-exile/conan-script.sh
