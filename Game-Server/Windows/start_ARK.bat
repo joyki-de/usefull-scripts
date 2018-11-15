@@ -1,0 +1,1 @@
+start ""/NORMAL "C:\STEAM\steamcmd\ark\ShooterGame\Binaries\Win64\ShooterGameServer.exe" "Extinction?listen?SessionName=SERVERNAME?ServerAdminPassword=PASSWORD?Port=7777?QueryPort=27017?MaxPlayers=64"
