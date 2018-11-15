@@ -1,1 +1,0 @@
-start ""/NORMAL "C:\STEAM\steamcmd\forest\TheForestDedicatedServer.exe"  -serverip 0.0.0.0 -serversteamport 8766 -servergameport 27017 -serverqueryport 27017 -servername SERVERNAME -serverplayers 8 -difficulty Peaceful -inittype Continue -slot 2 -nosteamclient -vegetarianmode -serverautosaveinterval 15 -enableVAC -showlogs 
