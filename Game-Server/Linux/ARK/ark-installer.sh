@@ -8,11 +8,11 @@ echo ""
 echo "ARK-Server Installer"
 echo ""
 PS3='Please choose: '
-options=("Install Requ.(root/sudo need!)" "Install Server" "Create Scripts" "Quit")
+options=("Install Requirements" "Install Server" "Create Scripts" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Install Requ.(root/sudo need!)")
+        "Install Requirements")
             echo "Install Requirements, please wait..."
 sudo apt-get update 
 sudo apt-get upgrade -y 
