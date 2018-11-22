@@ -1,0 +1,7 @@
+OK:2 http://archive.raspberrypi.org/debian stretch InRelease
+Holen:1 http://raspbian.raspberrypi.org/raspbian stretch InRelease [15,0 kB]
+OK:3 https://deb.nodesource.com/node_10.x stretch InRelease
+Holen:4 http://raspbian.raspberrypi.org/raspbian stretch/main Sources [9.717 kB]
+Holen:5 http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages [11,7 MB]
+Es wurden 13,7 MB in 49 s geholt (278 kB/s).
+Paketlisten werden gelesen...
