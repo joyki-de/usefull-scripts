@@ -60,7 +60,7 @@ cd ~
 touch ark-start.sh
 echo '#! /bin/bash
 cd ~/Ark/Serverfiles
-screen -dmS Ark /ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=SERVERNAME -server -log' >$starter
+./ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=SERVERNAME -server -log' >$starter
 chmod +x ark-start.sh
 echo  "[Starter] created"
 fi
