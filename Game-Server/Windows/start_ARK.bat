@@ -1,1 +1,1 @@
-start ""/NORMAL "C:\STEAM\steamcmd\ark\ShooterGame\Binaries\Win64\ShooterGameServer.exe" "Extinction?listen?SessionName=SERVERNAME?ServerAdminPassword=PASSWORD?Port=7777?QueryPort=27017?MaxPlayers=64"
+start ""/NORMAL "C:\STEAM\steamcmd\ark\ShooterGame\Binaries\Win64\ShooterGameServer.exe" "Extinction?listen?SessionName=AFD-Clan Basement Ark?ServerPassword=afd?ServerAdminPassword=sdfg46dfgh?Port=7780?QueryPort=27019?MaxPlayers=64"
