@@ -12,6 +12,13 @@ start /wait update_ARK.bat
 echo.
 Echo Done
 echo.
+echo Update Atlas...
+TIMEOUT /T 10
+echo.
+start /wait update_Atlas.bat
+echo.
+Echo Done
+echo.
 echo Update Conan Exiles...
 TIMEOUT /T 10
 echo.
