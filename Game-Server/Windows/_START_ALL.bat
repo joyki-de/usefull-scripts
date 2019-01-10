@@ -38,6 +38,13 @@ TIMEOUT /T 60
 echo.
 start start_SE.bat
 echo.
+Echo Done
+echo.
+echo start Atlas...
+TIMEOUT /T 60
+echo.
+start start_Atlas.bat
+echo.
 Echo All Done
 echo.
 Pause
