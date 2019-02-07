@@ -12,6 +12,13 @@ start start_ARK.bat
 echo.
 Echo Done
 echo.
+echo start CS:GO...
+TIMEOUT /T 60
+echo.
+start start_CSGO.bat
+echo.
+Echo Done
+echo.
 echo start Conan Exiles...
 TIMEOUT /T 60
 echo.
