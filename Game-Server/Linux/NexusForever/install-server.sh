@@ -8,13 +8,14 @@ echo -n "Enter Path to Wildstar-Client (e.g. /home/files/WildstarClient/) :"
 read -e WILDSTAR
 echo ""
 echo -n "tbl-Files on ${TBFPATH} and Wildstar-Client on ${WILDSTAR} correct?"
-echo -n "Don't forget the / on the End of the Patch !"
+echo -n "Don't forget the / on the End of the Path !"
                case $CONFIRM in
                         y|Y|YES|yes|Yes|j|J)
                                 break ;;
                         *) echo "Please enter Path again"
                 esac
 done
+
 mkdir ${HOME}/git
 cd ${HOME}/git
 git clone https://github.com/NexusForever/NexusForever.git
