@@ -21,7 +21,6 @@
                         *) echo "Please enter again"
                 esac
         done
-mysql -v -u root -D nexus_forever_auth -e "TRUNCATE server;"
 mysql -v -u root -D nexus_forever_auth -e "INSERT INTO server (name, host, port, type) VALUES ('${SERVERNAME}', '${SERVERIP}', 24000, 0)$
 echo ""
 exit 1
