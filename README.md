@@ -6,6 +6,7 @@ A Collection of usefull scripts for Linux & Windows
 
 - Change Tree
 
+- Added Valheim (Windows & Linux)
 - Added conan-backup.sh
 - Added conan-script.sh
 - Added conan-installer.sh
