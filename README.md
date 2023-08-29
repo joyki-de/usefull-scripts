@@ -4,8 +4,8 @@ A Collection of usefull scripts for Linux & Windows
 
 ### Changelog:
 
+- Added Arduino-Files (BMP180 & DHT22 Sensor, incl. send to SQL)
 - Change Tree
-
 - Added Valheim (Windows & Linux)
 - Added conan-backup.sh
 - Added conan-script.sh

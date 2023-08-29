@@ -1,0 +1,1 @@
+./steamcmd.sh +force_install_dir ~/Valheim/ +login anonymous +app_update 896660 validate +quit 
