@@ -18,15 +18,16 @@ apt-get upgrade -y
 sleep 1
 echo ""
 echo "[INST_2]: Install Packages"
-apt-get install lib32gcc1 curl screen ca-certificates libc6-dev build-essential -y
+apt-get install lib32gcc-s1 curl screen ca-certificates libc6-dev build-essential -y
 sleep 1
 echo ""
 echo "[INST_3]: Download Files"
 cd ~
-mkdir Valheim
-cd Valheim
+mkdir steam
+cd steam
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
 ./steamcmd.sh +force_install_dir ~/Valheim/ +login anonymous +app_update 896660 validate +quit 
+cd ~
 sleep 1
 echo ""
 echo "[DONE]: Install is done"
