@@ -1,9 +1,6 @@
-#ubuntu 22.x
-adduser -m steam
-apt update && apt upgrade -Y
-apt install software-properties-common screen -Y
-add-apt-repository multiverse -Y
-apt update
-apt install steamcmd -Y
-su steam
-steamcmd +force_install_dir ~/satisfactory +login anonymous +app_update 1690800 -beta public validate +quit
+Installer/Prepare for ubuntu 22.x
+1) Start Preprare.sh
+2) login with "su satisfactory"
+3) start screen
+4) update with updater
+5) start with "cd ~/satisfactory" & "./FactoryServer.sh"
