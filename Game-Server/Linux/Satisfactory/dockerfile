@@ -20,8 +20,12 @@ RUN cd /home/steam
 RUN mkdir /home/steam/satisfactory
 RUN steamcmd +force_install_dir /home/steam/satisfactory +login anonymous +app_update 1690800 -beta public validate +quit
 
-ENTRYPOINT ["/home/steam/satisfactory/FactoryServer.sh"]
+#ENV ServerQueryPort=15777
+#ENV BeaconPort=15000
+#ENV Port=7777
 
-EXPOSE 5222
-EXPOSE 6666
-EXPOSE 7777-7827/udp
+CMD  ["/home/steam/satisfactory/FactoryServer.sh -ServerQueryPort=15777 -BeaconPort=15000 -Port=7777" ]
+
+EXPOSE 15777
+EXPOSE 15000
+EXPOSE 7777
