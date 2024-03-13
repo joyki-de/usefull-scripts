@@ -1,6 +1,6 @@
 # Use with Docker:
 ~~~~~
-$ docker run -d -p 5222:5222 -p 6666:6666 -p 7777-7827:7777-7827/udp joyki/satisfactory:lastest
+$ docker run -d --name satisfactory -p 5222:5222 -p 6666:6666 -p 7777-7827:7777-7827/udp joyki/satisfactory:lastest
 ~~~~~
 
 # Use in shell:

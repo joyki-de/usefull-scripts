@@ -24,6 +24,6 @@ ENV Servername=NoNameSet
 ENV Seed=freetouse
 ENV Passwort=secret
 
-ENTRYPOINT ["/home/steam/valheim/valheim_server.x86_64 -name $Servername -port 2456 -world $freetouse -password $Passwort -crossplay"]
+ENTRYPOINT ["/home/steam/valheim/valheim_server.x86_64 -name "$Servername" -port 2456 -world "$Seed" -password "$Passwort" -crossplay"]
 
 EXPOSE 2456-2457
