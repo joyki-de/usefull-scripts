@@ -1,0 +1,27 @@
+FROM ubuntu:latest
+FROM steamcmd/steamcmd:latest
+
+MAINTAINER Joyki
+
+RUN apt update && apt upgrade -y 
+RUN apt install -y software-properties-common lsb-release lib32gcc-s1 ca-certificates libc6-dev build-essential 
+RUN dpkg --add-architecture i386  
+RUN add-apt-repository multiverse -y 
+RUN apt update  
+RUN apt-get upgrade -y  
+RUN adduser steam
+
+USER steam
+ENV HOME /home/steam
+WORKDIR /home/steam
+VOLUME /home/steam
+
+RUN cd /home/steam 
+RUN mkdir /home/steam/satisfactory
+RUN steamcmd +force_install_dir /home/steam/satisfactory +login anonymous +app_update 1690800 -beta public validate +quit
+
+ENTRYPOINT ["/home/steam/satisfactory/FactoryServer.sh"]
+
+EXPOSE 5222
+EXPOSE 6666
+EXPOSE 7777-7827/udp

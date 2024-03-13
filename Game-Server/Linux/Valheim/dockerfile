@@ -1,0 +1,25 @@
+FROM ubuntu:latest
+FROM steamcmd/steamcmd:latest
+
+MAINTAINER Joyki
+
+RUN apt update && apt upgrade -y 
+RUN apt install -y software-properties-common lsb-release lib32gcc-s1 ca-certificates libc6-dev build-essential 
+RUN dpkg --add-architecture i386  
+RUN add-apt-repository multiverse -y 
+RUN apt update  
+RUN apt-get upgrade -y  
+RUN adduser steam
+
+USER steam
+ENV HOME /home/steam
+WORKDIR /home/steam
+VOLUME /home/steam
+
+RUN cd /home/steam 
+RUN mkdir /home/steam/valheim
+RUN steamcmd +force_install_dir /home/steam/valheim +login anonymous +app_update 896660 validate +quit
+
+ENTRYPOINT ["/home/steam/valheim/start_server.sh"]
+
+EXPOSE 2456-2458
