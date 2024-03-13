@@ -24,10 +24,9 @@ ENV Servername=NoNameSet
 ENV Seed=freetouse
 ENV Passwort=secret
 
-EXPORT templdpath=$LD_LIBRARY_PATH
-EXPORT LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
-EXPORT SteamAppId=892970
-EXPORT LD_LIBRARY_PATH=$templdpath
+ENV templdpath=$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
+ENV SteamAppId=892970
 
 CMD ["/home/steam/valheim/valheim_server.x86_64 -name "$Servername" -port 2456 -world "$Seed" -password "$Passwort" -crossplay"]
 

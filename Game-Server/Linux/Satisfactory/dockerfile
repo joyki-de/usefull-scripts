@@ -24,7 +24,7 @@ RUN steamcmd +force_install_dir /home/steam/satisfactory +login anonymous +app_u
 #ENV BeaconPort=15000
 #ENV Port=7777
 
-CMD  ["/home/steam/satisfactory/FactoryServer.sh -ServerQueryPort=15777 -BeaconPort=15000 -Port=7777" ]
+CMD ["/home/steam/satisfactory/FactoryServer.sh -ServerQueryPort=15777 -BeaconPort=15000 -Port=7777"]
 
 EXPOSE 15777
 EXPOSE 15000
