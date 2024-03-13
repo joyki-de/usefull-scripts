@@ -20,6 +20,10 @@ RUN cd /home/steam
 RUN mkdir /home/steam/valheim
 RUN steamcmd +force_install_dir /home/steam/valheim +login anonymous +app_update 896660 validate +quit
 
-ENTRYPOINT ["/home/steam/valheim/start_server.sh"]
+ENV Servername=NoNameSet
+ENV Seed=freetouse
+ENV Passwort=secret
 
-EXPOSE 2456-2458
+ENTRYPOINT ["/home/steam/valheim/valheim_server.x86_64 -name $Servername -port 2456 -world $freetouse -password $Passwort -crossplay"]
+
+EXPOSE 2456-2457
