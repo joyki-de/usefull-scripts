@@ -1,6 +1,6 @@
 # Use with Docker:
 ~~~~~
-$ docker run -d --rm --name satisfactory -p 7777:7777 -p 15777:15777 -p 15000:15000 joyki/satisfactory:latest
+$ docker run -d --name satisfactory -p 7777:7777 -p 15777:15777 -p 15000:15000 joyki/satisfactory:latest
 ~~~~~
 
 
