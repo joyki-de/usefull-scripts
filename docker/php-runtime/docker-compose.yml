@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+php-runtime:
+    image: joyki/php-runtime
+    container_name: php-runtime
+    volumes:
+    - ./:/var/www/html  # change local path
+    ports:
+    - "80:80"           

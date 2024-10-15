@@ -1,0 +1,18 @@
+services:
+  valheim:
+    image: ghcr.io/lloesche/valheim-server
+    cap_add:
+      - sys_nice
+    volumes:
+      - /docker/valheim/config:/config
+      - /docker/valheim/data:/opt/valheim
+    ports:
+      - "2456-2458:2456-2458/udp"
+      - "9001:9001/tcp"
+    environment:
+      SERVER_NAME: "Servername"
+      WORLD_NAME: "MyDWorld"
+      SERVER_PASS: "any"
+      SERVER_PUBLIC: TRUE
+    restart: always
+    stop_grace_period: 2m

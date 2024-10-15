@@ -1,0 +1,25 @@
+version: '3'
+services:
+    satisfactory-server:
+        container_name: 'satisfactory-server'
+        hostname: 'satisfactory-server'
+        image: 'wolveix/satisfactory-server:latest'
+        ports:
+            - '7777:7777/udp'
+            - '7777:7777/tcp'
+        volumes:
+            - '/docker/satisfactory/config:/config'
+        environment:
+            - MAXPLAYERS=4
+            - PGID=1000
+            - PUID=1000
+
+
+        restart: unless-stopped
+        deploy:
+          resources:
+            limits:
+              memory: 6G
+            reservations:
+              memory: 4G
+          
