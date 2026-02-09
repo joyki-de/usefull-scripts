@@ -1,0 +1,15 @@
+location / {
+    # Google DNS oder Cloudflare DNS als Resolver nutzen
+    resolver 8.8.8.8 1.1.1.1 valid=30s;
+    
+    # Die Domain in eine Variable speichern (das erzwingt das Re-Resolving)
+    set $upstream_endpoint ziel-dyndns.ipv64.net;
+    
+    # WICHTIG: Kein [ ] um die Variable, aber das Protokoll davor
+    proxy_pass http://$upstream_endpoint:80;
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
